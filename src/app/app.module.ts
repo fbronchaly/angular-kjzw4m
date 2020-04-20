@@ -6,7 +6,7 @@ import {APP_ROUTING} from './app.routes';
 
 //Servicios
 
-import { HeroeService } from '../app/servicios/heroe.service';
+
 
 
 //Componentes
@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeroesService } from './servicios/heroes.service';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     APP_ROUTING,
-    NgbModule
+    NgbModule,
+    HeroesService
   ],
   providers: [
     HeroeService
